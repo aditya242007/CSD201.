@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inner</title>
+    <link rel="stylesheet" href="ak1.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Akr NGO's</h1>
+            <div class="nav-links">
+
+                <button class="nav-button" data-tab="symptom-checker">Symptom Checker</button>
+                <button class="nav-button" data-tab="appointments">Appointments</button>
+                <button class="nav-button" data-tab="consultation">Consultation</button>
+            </div>
+            <button class="menu-button">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <h2>Welcome to the Future of Healthcare</h2>
+                <p>AI-powered diagnoses and real-time consultations at your fingertips</p>
+                <button class="cta-button" data-tab="symptom-checker">Try AI Symptom Checker</button>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br>
+        </section>
+
+        <section id="symptom-checker" class="card hidden">
+            <div class="card-header">
+                <h2><i data-lucide="brain"></i> AI Symptom Checker</h2>
+                <p>Describe your symptoms for an AI-powered initial assessment</p>
+            </div>
+            <div class="card-content">
+                <div class="form-group">
+                    <label for="symptoms">Your Symptoms</label>
+                    <textarea id="symptoms" placeholder="Describe your symptoms here..."></textarea>
+                </div>
+                <button id="get-assessment" class="button">Get AI Assessment</button>
+                <div id="ai-diagnosis" class="hidden">
+                    <h3>AI Assessment</h3>
+                    <p id="diagnosis-text"></p>
+                </div>
+            </div>
+        </section>
+
+        <section id="appointments" class="card hidden">
+            <div class="card-header">
+                <h2><i data-lucide="calendar"></i> Real-time Appointment Scheduling</h2>
+                <p>Choose a date and available time slot for your consultation</p>
+            </div>
+            <div class="card-content">
+                <div class="grid">
+                    <div class="calendar-container">
+                        <label>Select Date</label>
+                        <div id="calendar"></div>
+                    </div>
+                    <div class="slots-container">
+                        <label>Available Slots</label>
+                        <div id="time-slots" class="time-slots"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="consultation" class="card hidden">
+            <div class="card-header">
+                <h2><i data-lucide="video"></i> Virtual Consultation</h2>
+                <p>Connect with doctor in real-time</p>
+            </div>
+            <div class="card-content">
+                <div class="video-container">
+                    <p>Video</p>
+                </div>
+                <div class="consultation-info">
+                    <div class="doctor-info">
+                        <img src="https://www.indicure.com/assets/img/best-surgeons/Oncologists/Dr-Suresh-H-Advani.webp" alt="Doctor" class="avatar">
+                        <div>
+                            <p class="doctor-name">Dr. Prof Suresh H Advani</p>
+                            <p class="doctor-specialty">medical oncologists in India.</p>
+                        </div>
+                    </div>
+                    <div class="consultation-actions">
+                        <button class="button outline"><i data-lucide="activity"></i> Vitals</button>
+                        <button class="button danger">End Call</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3>Akr</h3>
+                <p>Revolutionizing healthcare with AI and real-time consultations</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                    <a href="#">Twitter</a>
+                    <a href="#">Facebook</a>
+                    <a href="#">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="ak1.js"></script>
+</body>
+</html>

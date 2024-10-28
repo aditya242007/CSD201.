@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    }
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #eaf6ff;
+    }
+    .appointment {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0,
+    0, 0.2);
+    }
+    .details h3 {
+    font-size: 18px;
+    color: #333;
+    margin-left: 30px;
+    }
+    .details p {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+    margin-left: 30px;
+    }
+    .form {
+    padding: 30px;
+    width: 60%;
+    }
+    .form h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    }
+    .consultation{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    }
+    .form label {
+    font-size: 14px;
+    color: #333;
+    margin-top: 15px;
+    display: block;
+    }
+    .form input,.form select, .number{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    }
+    .number {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    }
+    .number select {
+        width: 20%;
+        padding: 9px;
+    }
+    .number input {
+        width: 60%;
+    }
+    .number button {
+        padding: 10px;
+        color: #fff;
+        background-color:#1e90ff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .number button:hover {
+        background-color: #1c86ee;
+    }
+    .submit-button {
+        width: 100%;
+        padding: 12px;
+        background-color:#1e90ff;
+        color: #fff;
+        font-size:16px;
+        border:none;
+        border-radius:5px;
+        cursor:pointer;
+    }
+    .submit-button:hover{
+        background-color: #1c86ee;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="appointment">
+        <div class="doctor-img">
+            <img src="https://www.medanta.org/storage/all-doctor-with-slug/dr-ashok-rajgopal.png" alt="Dr. Ashok Rajgopal ">
+            <div class="details">
+                <h3>Dr. Ashok Rajgopal</h3>
+                <p>Specialist in Musculoskeletal Disorders & Orthopaedics</p>
+                <p>clinic - sangam nagar road</p>
+            </div>
+        </div>
+
+        <div class="form">
+            <h1>Healthcare without the headaches</h1>
+            <div class="consultation">
+                <label for="doctor"> <input type="radio" name="consultation" checked> in doctor cabin </label>
+                <label for="videocall"><input type="radio" name="consultation"> in video call</label>
+            </div>
+            <label>patient's full name</label>
+            <input type="text" placeholder="name" required>
+
+            <label>mobile number</label>
+            <div class="phone">
+                <select name="number">
+                    <option>+91</option>
+                    <option>+13</option>
+                </select>
+                <input type="text" placeholder="1234-5678" required>
+                <button>Verify</button>
+            </div>
+            <label> date </label>
+            <input type="date" required>
+
+            <label> time</label>
+            <input type="time" required>
+
+            <label> select type of consultation</label>
+            <select>
+                <option> general consultation services</option>
+            </select>
+            <button class="submit-button">Get Appointment</button>
+            <br><br>
+            <h4>link for address: <a href="https://www.google.com/maps/place/Krsnaa+Diagnostics+Ltd+Phagwara/@31.2444512,75.6713563,13z/data=!4m10!1m2!2m1!1sdiagnostic+centre+near+me!3m6!1s0x391af5dd991506b1:0x622b869f61744165!8m2!3d31.2303083!4d75.7626563!15sChlkaWFnbm9zdGljIGNlbnRyZSBuZWFyIG1lIgOQAQGSARFkaWFnbm9zdGljX2NlbnRlcuABAA!16s%2Fg%2F11tsn2jftk?entry=ttu&g_ep=EgoyMDI0MTAyMy4wIKXMDSoASAFQAw%3D%3D"> Goople Map </a></h4>
+        </div>
+    </div>
+</body>
+</html>
